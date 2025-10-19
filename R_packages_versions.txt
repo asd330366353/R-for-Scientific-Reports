@@ -1,0 +1,126 @@
+# R Script Packages and Versions
+# Generated from all provided R scripts
+# Date: 2024-01-01
+
+## Core Data Analysis Packages
+tidyverse >= 1.3.0          # Data wrangling, visualization and programming
+dplyr >= 1.0.0              # Data manipulation
+haven >= 2.4.0              # Read Stata files (.dta)
+tableone >= 0.13.0          # Create Table One
+nortest >= 1.0.4            # Normality tests
+
+## Statistical Modeling and Analysis
+pROC >= 1.18.0              # ROC analysis and AUC calculation
+boot >= 1.3.28              # Bootstrap methods
+car >= 3.1.0                # Variance Inflation Factor (VIF) and regression diagnostics
+rms >= 6.3.0                # Regression modeling strategies, Restricted Cubic Splines (RCS)
+MASS >= 7.3.54              # Statistical functions and datasets
+
+## Regression Analysis and Table Output
+gtsummary >= 1.6.0          # Regression results tables
+broom >= 1.0.0              # Tidy model results
+purrr >= 0.3.4              # Functional programming tools
+
+## Visualization Packages
+ggplot2 >= 3.3.5            # Graphics plotting system
+forestploter >= 1.0.0       # Forest plot creation
+corrplot >= 0.92            # Correlation matrix visualization
+DiagrammeR >= 1.0.9         # Flowcharts and diagrams
+DiagrammeRsvg >= 0.1        # DiagrammeR SVG export
+rsvg >= 2.3.0               # SVG rendering
+
+## Advanced Statistical Methods
+PredictABEL >= 1.2.4        # Predictive model evaluation, NRI calculation
+nricens >= 1.6.0            # Reclassification analysis
+survival >= 3.2.13          # Survival analysis
+ResourceSelection >= 0.3.5  # Hosmer-Lemeshow test
+
+## Machine Learning
+randomForest >= 4.7.1.0     # Random Forest models
+
+## Propensity Score Matching
+MatchIt >= 4.5.0            # Propensity score matching and sensitivity analysis
+
+## Decision Curve Analysis
+dcurves >= 0.3.0            # Decision Curve Analysis (DCA)
+
+## High Performance Computing
+data.table >= 1.14.2        # Efficient data processing
+
+## Graphics System
+grid >= 4.0.0               # Graphics system (base R package)
+
+## Other Specialized Packages
+jstable >= 2.0.0            # Subgroup analysis tables
+
+## Base R Packages (usually included with R installation)
+stats >= 4.0.0              # Statistical functions (base R package)
+graphics >= 4.0.0           # Graphics functions (base R package)
+utils >= 4.0.0              # Utility functions (base R package)
+methods >= 4.0.0            # Methods functions (base R package)
+
+# =============================================
+# Installation Command Example:
+# install.packages(c(
+#   "tidyverse", "haven", "tableone", "nortest",
+#   "pROC", "boot", "car", "rms", "MASS",
+#   "gtsummary", "broom", "purrr",
+#   "ggplot2", "forestploter", "corrplot",
+#   "DiagrammeR", "DiagrammeRsvg", "rsvg",
+#   "PredictABEL", "nricens", "survival",
+#   "ResourceSelection", "randomForest",
+#   "MatchIt", "dcurves", "data.table", "jstable"
+# ))
+
+# =============================================
+# Version Compatibility Notes:
+# - Recommended R version >= 4.0.0
+# - Recommended RStudio version >= 1.4.0
+# - All packages are available from CRAN
+# - If installation issues occur, try installing updated versions from GitHub
+
+# =============================================
+# Script to Package Mapping:
+# 
+# Medication Usage.R: haven, tidyverse, tableone, nortest, dplyr
+# NRI+IDI+ Expansion Model Classification Thresholds.R: PredictABEL, pROC, nricens, survival
+# Forest plot.R: tidyverse, jstable, forestploter, data.table, grid
+# Logistic Regression Analysis: haven, tidyverse, tableone, nortest, gtsummary, broom, purrr
+# Data cleansing.R: haven, tidyverse, tableone, nortest, dplyr
+# ROC Calibration+DCA.R: pROC, ggplot2, randomForest, dplyr, dcurves, purrr, tidyr
+# Extended model +VIF.R: PredictABEL, pROC, nricens, boot, car, ggplot2, corrplot
+# Rosenbaum sensitivity analysis: MatchIt, ggplot2, dplyr
+# RCS analysis: ggplot2, rms
+# Comparison of Predictive Model Performance Metrics.R: pROC, ggplot2, boot, ResourceSelection
+# flowchart.R: DiagrammeR, DiagrammeRsvg, rsvg
+# Continuous NRI Analysis.R: PredictABEL, pROC, nricens, boot
+# ROC+DeLong Test.R: pROC, ggplot2, dplyr, tidyr
+# Individual component analysis: haven, tidyverse, tableone, nortest, dplyr, gtsummary
+# Results Analysis.R: pROC, ggplot2, dplyr, patchwork
+
+# =============================================
+# Package Function Descriptions:
+# 
+# tidyverse: Collection of R packages for data science (dplyr, ggplot2, tidyr, etc.)
+# haven: Import and export 'SPSS', 'Stata' and 'SAS' files
+# tableone: Create 'Table 1' to describe baseline characteristics
+# pROC: Display and analyze ROC curves for diagnostic tests
+# rms: Regression modeling strategies including logistic regression and survival models
+# gtsummary: Presentation-ready data summary and analytic result tables
+# forestploter: Create forest plots for meta-analysis and subgroup analysis
+# MatchIt: Nonparametric preprocessing for parametric causal inference
+# dcurves: Decision curve analysis for evaluating prediction models
+# PredictABEL: Assess the predictive ability of regression models
+# nricens: NRI-based reclassification analysis for censored data
+# DiagrammeR: Graph/network visualization using Graphviz and mermaid
+# car: Companion to Applied Regression - includes VIF calculation
+# randomForest: Breiman and Cutler's random forests for classification and regression
+
+# =============================================
+# Troubleshooting Notes:
+# 
+# - If package installation fails, try installing dependencies separately
+# - Some packages may require compilation tools on Windows (Rtools)
+# - For Mac users, some packages may require Xcode command line tools
+# - If encountering version conflicts, try updating R to the latest version
+# - The 'renv' package can be used for project-specific package management
